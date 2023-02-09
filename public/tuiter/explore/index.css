@@ -1,1 +1,13 @@
 body { --bs-body-font-family: sans-serif; }
+
+.fAwesome {
+    font-family: Helvetica, 'FontAwesome', sans-serif;
+}
+
+.mt-n1 {
+    margin-top: -40px !important;
+}
+
+.border-light.override-bs {
+    border-color: rgba(0, 0, 0, 0.125) !important;
+}
