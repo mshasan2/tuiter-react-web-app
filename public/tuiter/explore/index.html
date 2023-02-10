@@ -14,57 +14,65 @@
 
     <div class = "container mt-3">
         <div class="row">
-            <div class="col-2 text-black">
+            <div class="col-sm-2 col-md-2 col-lg-1 col-xl-2 text-black">
                 <ul class="list-group">
                     <li class="list-group-item ">
                         <i class="fa-brands fa-tumblr"></i>
                     </li>
                     <li class="list-group-item">
                         <a href="#" class = "text-decoration-none alert-heading">
-                            <i class="fa-solid fa-house"></i> Home</a>
+                            <i class="fa-solid fa-house"></i>
+                            <span class = "d-none d-xl-inline d-inline">Home</span></a>
                     </li>
                     <li class="list-group-item active">
                         <a href="#" class = "text-decoration-none alert-heading">
-                            <i class="fa-solid fa-hashtag"></i> Explore</a>
+                            <i class="fa-solid fa-hashtag"></i>
+                            <span class = "d-none d-xl-inline d-inline">Explore</span></a>
                     </li>
                     <li class="list-group-item">
                         <a href="#" class = "text-decoration-none alert-heading">
-                            <i class="fa-solid fa-bell"></i> Notifications</a>
+                            <i class="fa-solid fa-bell"></i>
+                            <span class = "d-none d-xl-inline d-inline">Notifications</span></a>
                     </li>
                     <li class="list-group-item">
                         <a href="#" class = "text-decoration-none alert-heading">
-                            <i class="fa-solid fa-envelope"></i> Messages</a>
+                            <i class="fa-solid fa-envelope"></i>
+                            <span class = "d-none d-xl-inline d-inline">Messages</span></a>
                     </li>
                     <li class="list-group-item">
                         <a href="#" class = "text-decoration-none alert-heading">
-                            <i class="fa-solid fa-bookmark"></i> Bookmarks</a>
+                            <i class="fa-solid fa-bookmark"></i>
+                            <span class = "d-none d-xl-inline d-inline">Bookmarks</span></a>
                     </li>
                     <li class="list-group-item">
                         <a href="#" class = "text-decoration-none alert-heading">
-                            <i class="fa-solid fa-list"></i> Lists</a>
+                            <i class="fa-solid fa-list"></i>
+                            <span class = "d-none d-xl-inline d-inline">Lists</span></a>
                     </li>
                     <li class="list-group-item">
                         <a href="#" class = "text-decoration-none alert-heading">
-                            <i class="fa-solid fa-user"></i> Profile</a>
+                            <i class="fa-solid fa-user"></i>
+                            <span class = "d-none d-xl-inline d-inline">Profile</span></a>
                     </li>
                     <li class="list-group-item">
                         <a href="#" class = "text-decoration-none alert-heading">
-                            <i class="fa-solid fa-ellipsis"></i> More</a>
+                            <i class="fa-solid fa-ellipsis"></i>
+                            <span class = "d-none d-xl-inline d-inline">More</span></a>
                     </li>
-                    <li class="list-group-item active rounded-pill mt-2 text-center">
+                    <!--<li class="list-group-item active rounded-pill mt-2 text-center">
                         <a href="#" class = "text-decoration-none alert-heading">Tweet</a>
-                    </li>
+                    </li>-->
                 </ul>
-
-
-
-
+                <div class = "mt-2">
+                    <button type="button" class="btn btn-primary rounded-pill btn-block w-100"
+                    >Tweet</button>
+                </div>
 
             </div>
 
-            <div class="col-6 text-black">
+            <div class="col-sm-10 col-md-10 col-lg-7 col-xl-6 text-black">
                 <div class="row">
-                    <div class="col-11">
+                    <div class="col-sm-11 col-md-11 col-lg-11 col-xl-11">
                         <div class="input-group mb-3">
                             <input type="text" class="form-control rounded-pill fAwesome"
                                    placeholder="&#xf002; &nbsp; &nbsp; Search Tuiter"
@@ -73,7 +81,7 @@
                         </div>
 
                     </div>
-                    <div class="col-1 text-center pt-1 text-primary">
+                    <div class="col-sm-1 col-md-1 col-lg-1 col-xl-1 text-center pt-1 text-primary">
                         <h4><i class="fa-solid fa-gear"></i></h4>
                     </div>
                 </div>
@@ -91,7 +99,7 @@
                     <li class="nav-item">
                         <a class="nav-link" href="sports.html"><b>Sports</b></a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item d-sm-none d-md-inline">
                         <a class="nav-link" href="entertainment.html"><b>Entertainment</b></a>
                     </li>
                 </ul>
@@ -103,7 +111,7 @@
 
                 <div class = "border border-top-0 border-light override-bs p-2 ps-3 pe-3">
                     <div class="row ">
-                        <div class="col-10 ">
+                        <div class="col-sm-8 col-md-9 col-lg-9 col-xl-10 ">
                             <div class="text-muted">Web Development</div>
                             <div><b>ReactJS</b>
                                 <i class="fa-solid fa-circle-check"></i>
@@ -114,8 +122,8 @@
                                 or SPAs</b>
                             </div>
                         </div>
-                        <div class="col-2">
-                            <img src="img/react_logo.png" class = "rounded"
+                        <div class="col-sm-4 col-md-3 col-lg-3 col-xl-2">
+                            <img src="img/react_logo.png" class = "rounded ms-4"
                                  width="80" height="80">
                         </div>
                     </div>
@@ -123,7 +131,7 @@
 
                 <div class = "border border-top-0 border-light override-bs p-2 ps-3 pe-3">
                     <div class="row ">
-                        <div class="col-10 ">
+                        <div class="col-sm-8 col-md-9 col-lg-9 col-xl-10 ">
                             <div><b>JavaScript </b>
                                 <i class="fa-solid fa-circle-check"></i>
                                 <span class="text-muted"> - 2h</span>
@@ -132,8 +140,8 @@
                                 that can run on browsers as well as desktops</b>
                             </div>
                         </div>
-                        <div class="col-2">
-                            <img src="img/JavaScript-logo.png" class = "rounded"
+                        <div class="col-sm-4 col-md-3 col-lg-3 col-xl-2 ">
+                            <img src="img/JavaScript-logo.png" class = "rounded ms-4"
                                  width="80" height="80">
                         </div>
                     </div>
@@ -141,15 +149,15 @@
 
                 <div class = "border border-top-0 border-light override-bs p-2 ps-3 pe-3">
                     <div class="row ">
-                        <div class="col-10 ">
+                        <div class="col-sm-8 col-md-9 col-lg-9 col-xl-10 ">
                             <div class="text-muted">Web Development</div>
                             <div> <b>jQuery</b>
                             </div>
                             <div class="text-muted">123K Tweets
                             </div>
                         </div>
-                        <div class="col-2">
-                            <img src="img/jquery_logo.png" class = "rounded"
+                        <div class="col-sm-4 col-md-3 col-lg-3 col-xl-2">
+                            <img src="img/jquery_logo.png" class = "rounded  ms-4"
                                  width="80" height="80">
                         </div>
                     </div>
@@ -157,7 +165,7 @@
 
                 <div class = "border border-top-0 border-light override-bs p-2 ps-3 pe-3">
                     <div class="row ">
-                        <div class="col-10 ">
+                        <div class="col-sm-8 col-md-9 col-lg-9 col-xl-10 ">
                             <div class="text-muted">Web Development</div>
                             <div><b>NodeJS</b>
                                 <i class="fa-solid fa-circle-check"></i>
@@ -166,8 +174,8 @@
                             <div class="text-muted">123K Tweets
                             </div>
                         </div>
-                        <div class="col-2">
-                            <img src="img/nodejs-logo.png" class = "rounded"
+                        <div class="col-sm-4 col-md-3 col-lg-3 col-xl-2">
+                            <img src="img/nodejs-logo.png" class = "rounded ms-4"
                                  width="80" height="80">
                         </div>
                     </div>
@@ -178,23 +186,23 @@
 
             </div>
 
-            <div class="col-4 text-black">
+            <div class="d-none d-lg-inline col-lg-4 col-xl-4 text-black">
                 <ul class="list-group">
                     <li class="list-group-item ">
                         <b>Who to follow</b>
                     </li>
                     <li class="list-group-item">
                         <div class="row">
-                            <div class="col-2 ">
+                            <div class="col-lg-2 col-xl-2 ">
                                 <img class="rounded-circle" src="img/java_logo.png" alt="Profile Pic"
-                                     width="48", height="48">
+                                     width="48" height="48">
                             </div>
-                            <div class="col-7">
+                            <div class="col-lg-7 col-xl-7 pe-0">
                                 <div><b>Java</b> <i class="fa-solid fa-circle-check"></i>
                                 </div>
                                 <div>@Java</div>
                             </div>
-                            <div class="col-3 ">
+                            <div class="col-lg-3 col-xl-3 ps-0">
                                 <div>
                                     <button type="button" class="btn btn-primary rounded-pill">Follow</button>
                                 </div>
@@ -203,17 +211,17 @@
                     </li>
                     <li class="list-group-item">
                         <div class="row">
-                            <div class="col-2 ">
+                            <div class="col-lg-2 col-xl-2 ">
                                 <img class="rounded-circle" src="img/rel_space.jpeg" alt="Profile Pic"
-                                     width="48", height="48">
+                                     width="48" height="48">
                             </div>
-                            <div class="col-7">
+                            <div class="col-lg-7 col-xl-7 pe-0 ">
                                 <div><b>Relativity Space</b> <i class="fa-solid fa-circle-check"></i>
                                 </div>
                                 <div>@relativityspace</div>
                             </div>
-                            <div class="col-3 ">
-                                <div>
+                            <div class="col-lg-3 col-xl-3 ps-0">
+                                <div class="">
                                     <button type="button" class="btn btn-primary rounded-pill">Follow</button>
                                 </div>
                             </div>
@@ -221,16 +229,16 @@
                     </li>
                     <li class="list-group-item">
                         <div class="row">
-                            <div class="col-2 ">
+                            <div class="col-lg-2 col-xl-2 ">
                                 <img class="rounded-circle" src="img/vir_glt.png" alt="Profile Pic"
-                                     width="48", height="48">
+                                     width="48" height="48">
                             </div>
-                            <div class="col-7">
+                            <div class="col-lg-7 col-xl-7 pe-0">
                                 <div><b>Virgin Galactic</b> <i class="fa-solid fa-circle-check"></i>
                                 </div>
                                 <div>@virgingalactic</div>
                             </div>
-                            <div class="col-3 ">
+                            <div class="col-lg-3 col-xl-3 ps-0">
                                 <div>
                                     <button type="button" class="btn btn-primary rounded-pill">Follow</button>
                                 </div>
@@ -239,16 +247,16 @@
                     </li>
                     <li class="list-group-item">
                         <div class="row">
-                            <div class="col-2 ">
+                            <div class="col-lg-2 col-xl-2 ">
                                 <img class="rounded-circle" src="img/nasa_logo.jpeg" alt="Profile Pic"
-                                     width="48", height="48">
+                                     width="48" height="48">
                             </div>
-                            <div class="col-7">
+                            <div class="col-lg-7 col-xl-7 pe-0">
                                 <div><b>NASA</b> <i class="fa-solid fa-circle-check"></i>
                                 </div>
                                 <div>@NASA</div>
                             </div>
-                            <div class="col-3 ">
+                            <div class="col-lg-3 col-xl-3 ps-0">
                                 <div>
                                     <button type="button" class="btn btn-primary rounded-pill">Follow</button>
                                 </div>
@@ -257,16 +265,16 @@
                     </li>
                     <li class="list-group-item">
                         <div class="row">
-                            <div class="col-2 ">
+                            <div class="col-lg-2 col-xl-2">
                                 <img class="rounded-circle" src="img/Tsla_logo.jpeg" alt="Profile Pic"
-                                     width="48", height="48">
+                                     width="48" height="48">
                             </div>
-                            <div class="col-7">
+                            <div class="col-lg-7 col-xl-7 pe-0">
                                 <div><b>Tesla</b> <i class="fa-solid fa-circle-check"></i>
                                 </div>
                                 <div>@Tesla</div>
                             </div>
-                            <div class="col-3 ">
+                            <div class="col-lg-3 col-xl-3 ps-0">
                                 <div>
                                     <button type="button" class="btn btn-primary rounded-pill">Follow</button>
                                 </div>
