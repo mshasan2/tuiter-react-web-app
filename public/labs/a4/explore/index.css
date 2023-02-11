@@ -1,0 +1,48 @@
+body { --bs-body-font-family: sans-serif; }
+
+.fAwesome {
+    font-family: Helvetica, 'FontAwesome', sans-serif;
+}
+
+.mt-n1 {
+    margin-top: -62px !important;
+}
+
+.border-light.override-bs {
+    border-color: rgba(0, 0, 0, 0.03) !important;
+}
+
+.list-group-item.override-bg {
+
+    background-color: rgba(0, 0, 0, 0.013) !important;
+    border-color: rgba(0, 0, 0, 0.013) !important;
+}
+
+
+.fa-solid.color-override-primary {
+    color: blue;
+}
+
+.fa-solid.color-override-gold {
+    color: gold;
+}
+
+.btn.btn-black {
+    background-color: black;
+    color: white;
+}
+
+.small-font-size {
+    font-size: 0.75em !important;
+}
+
+.list-group-item.border-bse-override {
+    border-left-color: white;
+    border-right-color: white;
+    border-bottom-color: white;
+}
+
+/*.list-group-item.border-radius-bse-override {
+    border-bottom-left-radius: ;
+}*/
+
