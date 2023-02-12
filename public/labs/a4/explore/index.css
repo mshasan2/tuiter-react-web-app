@@ -5,7 +5,7 @@ body { --bs-body-font-family: sans-serif; }
 }
 
 .mt-n1 {
-    margin-top: -62px !important;
+    margin-top: -65px !important;
 }
 
 .border-light.override-bs {
@@ -20,7 +20,7 @@ body { --bs-body-font-family: sans-serif; }
 
 
 .fa-solid.color-override-primary {
-    color: blue;
+    color: #1DA1F2;
 }
 
 .fa-solid.color-override-gold {
@@ -46,3 +46,11 @@ body { --bs-body-font-family: sans-serif; }
     border-bottom-left-radius: ;
 }*/
 
+.text-primary.tuiter-clr-override {
+    color: #1DA1F2;
+}
+
+.btn-primary.tuiter-btn-bg-override {
+    background-color: #1DA1F2;
+    border-color: #1DA1F2;
+}
