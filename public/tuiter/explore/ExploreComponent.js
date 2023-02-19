@@ -5,7 +5,7 @@ const ExploreComponent = () => {
          <div class="row">
               <div class="col-sm-11 col-md-11 col-lg-11 col-xl-11">
                 <div class="input-group mb-3">
-                    <input type="text" class="form-control rounded-pill fAwesome"
+                    <input type="text" class="form-control rounded-pill wd-fAwesome"
                         placeholder="&#xf002; &nbsp; &nbsp; Search Tuiter"
                         aria-label="Search Tuiter"
                         aria-describedby="basic-addon1">
@@ -36,9 +36,9 @@ const ExploreComponent = () => {
            
                 
            <div class="row" id="box-search">
-                <div class="thumbnail">
+                <div class="wd-thumbnail">
                     <img src="../../images/starship_spacex.jpeg" alt="" class="img-responsive w-100">
-                    <div class="caption">
+                    <div class="wd-caption">
                         <div class="ms-4 h2">SpaceX's Starship</div>
                     </div>
                 </div>

@@ -1,20 +1,20 @@
 body { --bs-body-font-family: sans-serif; }
 
-.fAwesome {
+.wd-fAwesome {
     font-family: Helvetica, 'FontAwesome', sans-serif;
 }
 
-.thumbnail {
+.wd-thumbnail {
     position: relative;
 }
 
-.caption {
+.wd-caption {
     position: absolute;
     bottom: 0;
     right: 0;
     width: 100%;
 }
 
-.border-light.override-bs {
+.border-light.wd-override-bs {
     border-color: rgba(0, 0, 0, 0.125) !important;
 }

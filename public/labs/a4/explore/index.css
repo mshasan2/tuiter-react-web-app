@@ -1,6 +1,6 @@
 body { --bs-body-font-family: sans-serif; }
 
-.fAwesome {
+.wd-fAwesome {
     font-family: Helvetica, 'FontAwesome', sans-serif;
 }
 
@@ -8,7 +8,7 @@ body { --bs-body-font-family: sans-serif; }
     margin-top: -65px !important;
 }
 
-.border-light.override-bs {
+.border-light.wd-override-bs {
     border-color: rgba(0, 0, 0, 0.03) !important;
 }
 
