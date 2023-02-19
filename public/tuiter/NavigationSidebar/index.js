@@ -5,12 +5,12 @@ function NavigationSidebar(activeParameter) {
        <i class="fab fa-twitter"></i>
      </a>
      <a class="list-group-item ${activeParameter === "Home" ? "active" : ""}
-     " href="/">
+     " href="../HomeScreen/index.html">
        <i class="fa-solid fa-house"></i>
        <span class = "d-none d-xl-inline d-inline">Home</span>
        </a>
      <a class="list-group-item ${activeParameter === "Explore" ? "active" : ""}
-     " href="/">
+     " href="../explore/index.html">
        <i class="fa-solid fa-hashtag"></i>
        <span class = "d-none d-xl-inline d-inline">Explore</span>
        </a>
@@ -25,7 +25,7 @@ function NavigationSidebar(activeParameter) {
        <span class = "d-none d-xl-inline d-inline">Messages</span>
        </a>
      <a class="list-group-item ${activeParameter === "Bookmarks" ? "active" : ""}
-     " href="/">
+     " href="../bookmarks/index.html">
        <i class="fa-solid fa-bookmark"></i>
        <span class = "d-none d-xl-inline d-inline">Bookmarks</span>
        </a>

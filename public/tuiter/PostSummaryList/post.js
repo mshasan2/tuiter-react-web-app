@@ -1,4 +1,5 @@
-export default [
+let exploreItems;
+export default exploreItems =  [
     {
         topic: 'Web Development',
         userName: 'ReactJS',
