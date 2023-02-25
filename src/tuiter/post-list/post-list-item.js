@@ -54,8 +54,8 @@ function PostItem(
                         <div className="row">
                             <div className="col-11">
                                 <span className="">
-                                    <b>{post.userName}</b>
-                                    <i className="fa-solid fa-circle-check"/>
+                                    <b>{post.userName} </b>
+                                    <i className="fa-solid fa-circle-check text-primary"/>
                                 </span>
                                         <span className="text-muted ps-1"> @{post.handle} </span>
                                         <span className="text-muted"> &#183; {post.time}</span>
@@ -70,7 +70,9 @@ function PostItem(
                     </div>
                     </div>
 
-                    {<SubPost post={post}/>}
+                    <div className="pe-2">
+                        {<SubPost post={post}/>}
+                    </div>
 
                     <div className="ps-3 row pt-3 text-muted">
                         <div className="col-sm">

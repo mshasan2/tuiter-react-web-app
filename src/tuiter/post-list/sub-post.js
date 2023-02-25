@@ -40,7 +40,7 @@ function SubPost(
                     <span className="ps-1">
                         <span >
                             <b>{post.subTweet_userName} </b>
-                            <i className="fa-solid fa-circle-check"/>
+                            <i className="fa-solid fa-circle-check text-primary"/>
                         </span>
                         <span className="text-muted ps-1">@{post.subTweet_handle} </span>
                         <span className="text-muted"> &#183; {post.subTweet_time}</span>
