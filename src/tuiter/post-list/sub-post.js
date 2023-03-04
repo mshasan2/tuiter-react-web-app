@@ -28,7 +28,7 @@ function SubPost(
         subDiv = <div className="border border-light overflow-hidden wd-rounded-top-20
          wd-rounded-bottom-20">
             <img src={`/images/${post.postImage}`} className="w-100"
-                 alt="Post Image"/>
+                 alt="Post"/>
         </div>
     } else if (post.subPostType === 'subTweet') {
         subDiv =
