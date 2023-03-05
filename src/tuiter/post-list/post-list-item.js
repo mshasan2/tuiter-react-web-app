@@ -44,15 +44,15 @@ function PostItem(
         <div className="border border-2 border-light pt-3 pb-3 ps-3 pe-2 border-bottom-0">
             {post.retweetUserName.length > 0 ? retweetdiv : ""}
             <div className="row ">
-                <div className="col-1">
+                <div className="col-sm-2 col-md-1">
                 <img src={`/images/${post.avatarIcon}`} className="rounded-circle"
                      width="55px" height="55px" alt="Avatar Icon"/>
             </div>
-                <div className="col-11 ">
+                <div className="col-sm-10 col-md-11 ">
                     <div className="ps-3">
                     <div>
                         <div className="row">
-                            <div className="col-11">
+                            <div className="col-sm-10 col-md-11">
                                 <span className="">
                                     <b>{post.userName} </b>
                                     <i className="fa-solid fa-circle-check text-primary"/>
@@ -60,7 +60,7 @@ function PostItem(
                                         <span className="text-muted ps-1"> @{post.handle} </span>
                                         <span className="text-muted"> &#183; {post.time}</span>
                             </div>
-                            <div className="col-1">
+                            <div className="col-sm-2 col-md-1">
                                 <span className="text-muted">&#8943;</span>
                             </div>
                         </div>
