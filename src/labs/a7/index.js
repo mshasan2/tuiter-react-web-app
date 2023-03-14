@@ -1,6 +1,5 @@
 import React from "react";
 import ReduxExamples from "./redux-examples";
-import Todos from "./redux-examples/todos-component";
 
 const Assignment7 = () => {
     return(
