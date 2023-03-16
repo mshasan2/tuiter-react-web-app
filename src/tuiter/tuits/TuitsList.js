@@ -1,6 +1,5 @@
 import React from "react";
 import {useSelector} from "react-redux";
-import PostItem from "../post-list/post-list-item";
 import TuitItem from "./TuitItem";
 
 const TuitsList = () => {
