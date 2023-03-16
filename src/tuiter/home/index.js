@@ -1,16 +1,13 @@
 import React from "react";
-import PostItem from "../post-list/post-list-item";
-import postArray from "../post-list/posts.json";
+import TuitsList from "../tuits/TuitsList";
+import WhatsHappening from "./whats-happening";
 
 const HomeComponent = () => {
     return(
         <div>
-            {
-                postArray.map(item =>
-                <PostItem post={item}
-                          key = {item._id}/>
-            )
-            }
+            <h1>Home</h1>
+            <WhatsHappening/>
+            <TuitsList/>
         </div>
 
     );
