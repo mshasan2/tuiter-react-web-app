@@ -2,20 +2,7 @@ import React from "react";
 import './index.css';
 import {useSelector} from "react-redux";
 import {useNavigate} from "react-router";
-
-
-const dateConversion = (date) => {
-    let split_date = date.split("/");
-    if ((split_date.length) === 2) {
-        const date = new Date(split_date[1], split_date[0] - 1, 1);
-        const month = date.toLocaleString('default', { month: 'long' });
-        return month + " " + split_date[1];
-    } else {
-        const date = new Date(split_date[2], split_date[1] -1, split_date[0]);
-        const month = date.toLocaleString('default', { month: 'long' });
-        return split_date[0] + " " + month + " " + split_date[2];
-    }
-}
+import DateConversion from "./dateConversion"
 
 const ProfileComponent = () => {
     const profInfo = useSelector(state => state.profile);
@@ -41,20 +28,20 @@ const ProfileComponent = () => {
                         </div>
                     </div>
                 </div>
-
             </div>
+
             <div className = "position-relative ">
                 <img src="/images/polyglot.jpeg" alt={"banner"}
                      className="w-100 "/>
                 <img src="/images/jose.jpeg" alt={"profile"}
                      className={"rounded-circle position-absolute wd-profile-overlap"}
                      width="120px"/>
-            <button
-                className="btn border border-3 border-light
-                 rounded-pill float-end mt-2 me-2 fw-bold"
-                onClick={() => routeChange('../edit-profile')}>
-                Edit Profile
-            </button>
+                <button
+                    className="btn border border-3 border-light
+                     rounded-pill float-end mt-2 me-2 fw-bold"
+                    onClick={() => routeChange('../edit-profile')}>
+                    Edit Profile
+                </button>
             </div>
             <div>
                 <br/>
@@ -68,10 +55,10 @@ const ProfileComponent = () => {
                 <span className="ps-1">{profInfo[0].location}</span>
 
                 <span className="ps-3"><i className="bi bi-balloon h5"/></span>
-                <span className="ps-1">Born on {dateConversion(profInfo[0].dateOfBirth)}</span>
+                <span className="ps-1">Born on {DateConversion(profInfo[0].dateOfBirth)}</span>
 
                 <span className="ps-3"><i className="bi bi-calendar3 h5"/></span>
-                <span className="ps-1">Joined {dateConversion(profInfo[0].dateJoined)}</span>
+                <span className="ps-1">Joined {DateConversion(profInfo[0].dateJoined)}</span>
             </div>
             <div className="mt-3">
                 <span className="fw-bold">{profInfo[0].followingCount}</span>
