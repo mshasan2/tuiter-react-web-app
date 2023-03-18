@@ -5,7 +5,7 @@ import {useState} from "react";
 import './index.css'
 import InputComponent from "./input-component";
 import DateConversion from "./dateConversion"
-import {updateDateOfBirth} from "../reducers/profile-reducer";
+import {updateDateOfBirth, updateProfileHandler} from "../reducers/profile-reducer";
 import {useDispatch} from "react-redux";
 
 const EditProfileComponent = () => {
@@ -40,6 +40,19 @@ const EditProfileComponent = () => {
         return convDate
     }
 
+    const updateProfile = () => {
+        let split_name = name.split(" ");
+        dispatch(updateProfileHandler({
+            "firstName": split_name[0],
+            "lastName": split_name[1],
+            "bio": bio,
+            "location": location,
+            "website": website
+        }));
+        routeChange('../profile');
+
+    }
+
 
     return(
         <div>
@@ -55,7 +68,8 @@ const EditProfileComponent = () => {
 
                             <button
                                 className="btn btn-dark
-                                 rounded-pill float-end">
+                                 rounded-pill float-end"
+                                onClick={updateProfile}>
                                 Save
                             </button>
                         </div>
