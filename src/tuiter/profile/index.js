@@ -35,6 +35,9 @@ const ProfileComponent = () => {
             <div className = "position-relative ">
                 <img src="/images/polyglot.jpeg" alt={"banner"}
                      className="w-100 "/>
+            </div>
+
+            <div className = "position-relative ">
                 <img src="/images/jose.jpeg" alt={"profile"}
                      className={"rounded-circle position-absolute wd-profile-overlap"}
                      width="120px"/>
