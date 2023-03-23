@@ -58,9 +58,11 @@ const EditProfileComponent = () => {
         <div>
             <div>
                 <div className="row">
-                    <div className="col-1 mt-2 mb-2 ps-4">
+                    <div className="col-1 mt-2  ps-4">
+                        <button className="btn">
                         <i className="bi bi-x h5"
                            onClick={() => routeChange('../profile')}/>
+                        </button>
                     </div>
                     <div className="col-11">
                         <div className="h5 mt-2 mb-2 pe-3">

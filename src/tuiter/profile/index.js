@@ -16,8 +16,10 @@ const ProfileComponent = () => {
             <div>
                 <div className="row">
                     <div className="col-1 mt-2 mb-2 ps-4">
-                        <i className="bi bi-arrow-left h5"
+                        <button className="btn">
+                            <i className="bi bi-arrow-left h5"
                            onClick={() => routeChange('../')}/>
+                        </button>
                     </div>
                     <div className="col-11">
                         <div className="h5 mb-0">
@@ -48,7 +50,7 @@ const ProfileComponent = () => {
                 <div className="h3 mb-0 mt-5">{profInfo[0].firstName + " " + profInfo[0].lastName}</div>
                 <div className="text-muted">{profInfo[0].handle}</div>
 
-                <div className="mt-3">{profInfo[0].bio}</div>
+                <div className="mt-2">{profInfo[0].bio}</div>
             </div>
             <div className="text-muted mt-2">
                 <span><i className="bi bi-geo-alt h5"/></span>

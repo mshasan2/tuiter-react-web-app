@@ -45,7 +45,8 @@ const Todos = () => {
                                       </button>
                                       <input type = "checkbox"
                                       checked={todo.done}
-                                      onChange={() => toggleTodoDone(todo)}/>
+                                      onChange={() => toggleTodoDone(todo)}
+                                             className="me-2"/>
                                       {todo.do}
                                   </li>
                     )
