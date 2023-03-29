@@ -9,7 +9,7 @@ const PostSummaryList = () => {
     const dispatch = useDispatch();
     useEffect(() => {
         dispatch(findTuitsThunk())
-    }, [findTuitsThunk]);
+    }, [dispatch]);
 
 
     return(
