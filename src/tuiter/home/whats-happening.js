@@ -1,6 +1,6 @@
 import React, {useState} from "react";
 import {useDispatch} from "react-redux";
-import {createTuit} from '../tuits/tuits-reducer'
+import {createTuitThunk} from "../../services/tuits-thunks";
 
 const WhatsHappening = () => {
     let [whatsHappening, setWhatsHappening] = useState('')
@@ -9,7 +9,7 @@ const WhatsHappening = () => {
         const newTuit = {
             tuit: whatsHappening
         }
-        dispatch(createTuit(newTuit));
+        dispatch(createTuitThunk(newTuit));
     }
     return(
         <div className="border border-2 border-light pt-3 pb-3 ps-3 pe-2 border-bottom-0">

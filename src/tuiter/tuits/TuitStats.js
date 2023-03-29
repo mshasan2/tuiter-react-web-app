@@ -1,8 +1,9 @@
 import React from "react";
+import {updateTuitThunk} from "../../services/tuits-thunks";
 
 const TuitStats = (
-    post ,
-    likeHandler
+    post,
+    dispatch
 ) => {
 
     return (
@@ -21,15 +22,24 @@ const TuitStats = (
             </div>
             <div className="col-sm">
                 <div>
-                    <i className={post.liked ?
-                                  `fa-solid fa-heart text-danger` :
-                                  `fa-regular fa-heart`
-                                }
-                    onClick={() => likeHandler(post)}/>
-                    <span className="ps-3">{post.likes}</span>
-
+                    <i onClick={() => dispatch(updateTuitThunk({
+                                                                   ...post,
+                                                                   likes: post.likes + 1
+                                                               }))}
+                       className="bi bi-heart-fill me-2 text-danger"/>
+                    {post.likes}
                 </div>
+
             </div>
+            <div className="col-sm">
+                <i onClick={() => dispatch(updateTuitThunk({
+                                                               ...post,
+                                                               dislikes: post.dislikes + 1
+                                                           }))}
+                    className="bi bi-hand-thumbs-down-fill"/>
+                    {post.dislikes}
+            </div>
+
             <div className="col-sm">
                 <div>
                     <i className="fa-solid fa-share-nodes"/>

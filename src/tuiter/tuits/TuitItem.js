@@ -1,7 +1,7 @@
 import React from "react";
 import TuitStats from "./TuitStats";
 import {useDispatch} from "react-redux";
-import {likeTuitHandler, deleteTuit} from "./tuits-reducer";
+import {deleteTuitThunk} from "../../services/tuits-thunks";
 
 const TuitItem = (
     {
@@ -21,12 +21,10 @@ const TuitItem = (
     }
 ) => {
     const dispatch = useDispatch();
-    const likeHandler = (post) => {
-        dispatch(likeTuitHandler(post))
-    }
     const deleteTuitHandler = (id) => {
-        dispatch(deleteTuit(id));
+        dispatch(deleteTuitThunk(id));
     }
+
     return (
         <div className="border border-2 border-light pt-3 pb-3 ps-3 pe-2 border-bottom-1">
             <div className="row ">
@@ -57,7 +55,7 @@ const TuitItem = (
                         </div>
                     </div>
 
-                    {TuitStats(post, likeHandler)}
+                    {TuitStats(post, dispatch)}
 
 
                 </div>
