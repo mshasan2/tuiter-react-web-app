@@ -53,35 +53,6 @@ const tuitsSlice = createSlice({
         }
     },
     reducers: {}
-                                   /*{
-        likeTuitHandler(state, action) {
-            const tuitIndex = state.findIndex(item =>
-                item._id === action.payload._id
-            )
-            if (state[tuitIndex].liked) {
-                state[tuitIndex].likes--;
-            }
-            else {
-                state[tuitIndex].likes++;
-            }
-            state[tuitIndex].liked = !state[tuitIndex].liked;
-
-        },
-
-        createTuit(state, action) {
-            state.unshift({
-                ...action.payload,
-                ...templateTuit,
-                _id: (new Date()).getTime(),
-                          })
-        },
-
-        deleteTuit(state, action) {
-            const tuitIndex =
-                state.findIndex(item => item._id === action.payload)
-                state.splice(tuitIndex, 1)
-        }
-    }*/
                                });
 
 export default tuitsSlice.reducer;
