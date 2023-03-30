@@ -14,9 +14,13 @@ const PostSummaryList = () => {
 
     return(
         <div>
-            {loading}
-            <ul className="list-group">
 
+            <ul className="list-group">
+                {loading &&
+                 <li className="list-group-item">
+                     Loading...
+                 </li>
+                }
 
                 {
 

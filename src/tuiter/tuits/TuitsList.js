@@ -13,7 +13,10 @@ const TuitsList = () => {
 
     return(
         <div>
-            {loading}
+            {loading &&
+             <div className="border border-2 border-light pt-3 pb-3 ps-3 pe-2 border-bottom-1">
+                 Loading...
+             </div>}
             {
 
                 tuits.map(item =>
