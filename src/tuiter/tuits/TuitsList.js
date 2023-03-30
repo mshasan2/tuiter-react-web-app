@@ -18,11 +18,12 @@ const TuitsList = () => {
                  Loading...
              </div>}
             {
-
+                Array.isArray(tuits) ?
                 tuits.map(item =>
                                   <TuitItem post={item}
                                   key = {item._id}/>
                 )
+                : null
             }
         </div>
     );

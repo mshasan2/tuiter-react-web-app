@@ -23,10 +23,11 @@ const PostSummaryList = () => {
                 }
 
                 {
-
+                    Array.isArray(tuits) ?
                     tuits.map(post =>
                                        <PostSummaryItem
                                            key={post._id} post={post}/> )
+                    : null
                 }
             </ul>
         </div>
